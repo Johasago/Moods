@@ -1,0 +1,145 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 02-Jun-2018, 19:35:39
+    Author     : jo_ta
+*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 01-Jun-2018, 15:07:32
+    Author     : jo_ta
+*/
+
+
+img#sky-logo {
+    width: 100%;
+}
+
+.jumbotron {
+    padding:4em 5em;
+    margin-bottom: 0px;
+    background: linear-gradient(to right, orange, red , blueviolet);
+    border-radius: 0px;
+}
+
+.banner {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    bottom: auto;
+    right: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    width: 100%;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.left {
+    text-align: right;
+}
+
+
+h4 {
+    margin-top: -10px;
+    margin-bottom:15px;
+}
+
+.navbar {
+    height: 30px;
+    background-color: blueviolet;
+    margin-bottom: 40px;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+.navbar ul {
+    list-style-type: none;
+    float: left;
+}
+.navbar ul li {
+    float: left;
+    font-size: 3vmin;
+}
+
+.navbar ul li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin-left: 350px;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.navbar ul li a:hover {
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+        font-weight: bold;
+}
+
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    background: #3b3b3b;
+    outline: none;
+    opacity: 1;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 6px;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 30px;
+    background: blueviolet;
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: 3px 3px 2px #888888;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: blueviolet;
+    cursor: pointer;
+}
+
+.sliders {
+    margin-bottom: 10px;
+}
+
+.form {
+    border: 1px dotted blueviolet;
+    padding: 30px;
+}
+
+button {
+    background-color: blueviolet;
+    color: white;
+}
