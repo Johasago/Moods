@@ -1,5 +1,7 @@
+//Array to hold the current stauts of the slider bars
 var moodChoice = ['','','',''];
 
+//Takes the user's choice and updates the moodChoice array to match status of slider bars
 function moodUpdate(value) {
     switch (value) {
     case '0':
@@ -40,6 +42,7 @@ function moodUpdate(value) {
     break;
     }
 }
+//Resets the movie cards back to baseline of "No content"
 function resetMovies() {
     for (var i = 1; i < 6; i++) {
              var card = "<img class='card-img-top' src='Images/placeholder.jpg'></div>" +
@@ -47,9 +50,8 @@ function resetMovies() {
             document.getElementById(i).innerHTML = card;
 }
 }
-// function to load the data from data file
+//Loads the movie data from XML file and updates movie cards according to moodChoice
 function loadMovies(value) {
-    //var moodList = ['Agitated', '', 'Calm', 'Happy', '', 'Sad', 'Tired', '', 'Wide Awake', 'Scared', '', 'Fearless'];
     //console.log(value);
     moodUpdate(value);
     resetMovies();
@@ -64,12 +66,15 @@ function loadMovies(value) {
     xhttp.send();
 }
 
-// function to retrieve image and name for selectedMood
+// Retrieves the image from the images file and displays the name of the movie on the cards. 
+// It will go through the file and find the first instances of movies that match any of the moods in the moodChoice array
+// To make sure you get a mix of movies, I have not put all the same moods together in the XML file, so it will pick a variety to suit various moods.
+// Given more time, this could be bypassed by creating a randomisation function.
+
 function mood(data) {
-   // multiMood();
     var xml = data.responseXML;
     var parent = xml.getElementsByTagName("programme");
-    var count = 1;               //programme slot id where new suggestions will be displayed
+    var count = 1;               
     for (var i = 0; i < parent.length; i++) {
         if (moodChoice.includes(parent[i].getElementsByTagName("mood")[0].childNodes[0].nodeValue) && count < 6) {
              var card = "<img class='card-img-top' src=" + parent[i].getElementsByTagName("image")[0].childNodes[0].nodeValue + ">" +

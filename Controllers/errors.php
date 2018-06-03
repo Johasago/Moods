@@ -6,13 +6,10 @@ class Errors extends Controller {
         parent::__construct();
         
         
-       //testing if view and controllers are working
-       //  echo "error";
-        
     }
     
      function index(){
-        $this->view->msg = 'this page does not exist';
+        $this->view->msg = 'Uh oh, something went wrong! <br> This page does not exist. <br> Please go back to the main page';
         $this->view->render('errors/index');
     }
     

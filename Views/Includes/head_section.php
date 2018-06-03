@@ -16,17 +16,17 @@
     <body>
        <div class="container-fluid">
   <div class="row">
-    <div class="col-sm-2" style="padding-top:20px">
+    <div class="col-md-2" style="padding-top:20px">
         <img src='images/sky-logo.jpg' alt='sky-logo' id=sky-logo />             
         
              
     </div>
-    <div class="col-sm-10">
+    <div class="col-md-10">
         <div class ="jumbotron"><h1 class="banner">Pick a movie based on your mood</h1></div>
         <div class="navbar">
             <ul>
                 <li><a class="active" href="index">Moodslider</a></li>
-                <li><a class="upload" href="file_upload" >Upload Content</a></li>
+                <li><a class="upload" href="file_upload">Upload Content</a></li>
             </ul>
         </div>
     </div>

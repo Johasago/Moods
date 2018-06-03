@@ -1,7 +1,7 @@
 <?php
 
 class Bootstrap {
-
+//Calls the correct Controllers and Methods through the url
 	function __construct() {
 
 		$url = isset($_GET['url']) ? $_GET['url'] : null;

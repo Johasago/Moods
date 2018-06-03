@@ -1,20 +1,20 @@
 <div class="container">
 <div class ="sliders row">
            
-            <h4 class="col-sm-3 left">Agitated😬</h4>
-            <input type="range" min="0" max="2" value="1" class="col-sm-6 slider" id="slider1" onchange="loadMovies(this.value)">
-            <h4 class="col-sm-3">😎Calm</h4>
-            <h4 class="col-sm-3 left">Happy😀</h4>
-            <input type="range" min="3" max="5" value="4" class="col-sm-6 slider" id="slider2" onchange="loadMovies(this.value)">
-            <h4 class="col-sm-3">😢Sad</h4>
+            <h4 class="col-md-3 left">Agitated😬</h4>
+            <input type="range" min="0" max="2" value="1" class="col-md-6 slider" id="slider1" onchange="loadMovies(this.value)">
+            <h4 class="col-md-3">😎Calm</h4>
+            <h4 class="col-md-3 left">Happy😀</h4>
+            <input type="range" min="3" max="5" value="4" class="col-md-6 slider" id="slider2" onchange="loadMovies(this.value)">
+            <h4 class="col-md-3">😢Sad</h4>
            
-            <h4 class="col-sm-3 left">Tired😴</h4>
+            <h4 class="col-md-3 left">Tired😴</h4>
             <input type="range" min="6" max="8" value="7" class="slider col-sm-6" id="slider3" onchange="loadMovies(this.value)">
-            <h4 class="col-sm-3">😲Wide Awake</h4>
+            <h4 class="col-md-3">😲Wide Awake</h4>
 
-            <h4 class="col-sm-3 left">Scared😱</h4>
+            <h4 class="col-md-3 left">Scared😱</h4>
             <input type="range" min="9" max="11" value="10" class="slider col-sm-6" id="slider4" onchange="loadMovies(this.value)">
-            <h4 class="col-sm-3">😈Fearless</h4>
+            <h4 class="col-md-3">😈Fearless</h4>
 
         </div>
 

@@ -4,15 +4,6 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : 02-Jun-2018, 19:35:39
-    Author     : jo_ta
-*/
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
     Created on : 01-Jun-2018, 15:07:32
     Author     : jo_ta
 */
@@ -22,11 +13,13 @@ img#sky-logo {
     width: 100%;
 }
 
+/*Title Bar style*/
 .jumbotron {
-    padding:4em 5em;
+    padding:4em 4em;
     margin-bottom: 0px;
     background: linear-gradient(to right, orange, red , blueviolet);
     border-radius: 0px;
+    overflow: hidden;
 }
 
 .banner {
@@ -43,22 +36,14 @@ img#sky-logo {
     text-align: center;
     width: 100%;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    padding: 30px;
 }
 
-.left {
-    text-align: right;
-}
-
-
-h4 {
-    margin-top: -10px;
-    margin-bottom:15px;
-}
+/*Navbar style*/
 
 .navbar {
-    height: 30px;
     background-color: blueviolet;
-    margin-bottom: 40px;
+    height: 20%;
 }
 .navbar a {
     float: left;
@@ -75,15 +60,19 @@ h4 {
 }
 .navbar ul li {
     float: left;
-    font-size: 3vmin;
+    font-size: 2.75vmin;
+
 }
 
+.navbar ul li:nth-child(2){
+    pull: right;
+}
 .navbar ul li a {
-    display: inline-block;
+    
+    display: block;
     color: white;
     text-decoration: none;
-    margin-left: 350px;
-    margin-right: 15px;
+   
     margin-top: 10px;
 }
 
@@ -92,10 +81,20 @@ h4 {
         font-weight: bold;
 }
 
+/*Text for sliderbar*/
+.left {
+    text-align: right;
+}
+
+
+h4 {
+    margin-top: -10px;
+    margin-bottom:25px;
+}
 .slidecontainer {
     width: 100%;
 }
-
+/*The sliderbar itself*/
 .slider {
     -webkit-appearance: none;
     width: 100%;
@@ -134,6 +133,7 @@ h4 {
     margin-bottom: 10px;
 }
 
+/*style for upload form*/
 .form {
     border: 1px dotted blueviolet;
     padding: 30px;

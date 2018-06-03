@@ -4,7 +4,7 @@
             <div class="form">
                 <form action="File_upload/uploadFile" method="post" enctype="multipart/form-data">
     <h3><strong>Select file to upload:</strong></h3>
-    <input type="file" name="fileToUpload" id="file">
+    <input type="file" name="fileToUpload" id="file" accept=".xml">
     <input type="hidden" name="MAX_FILE_SIZE" value=2000000>
     <p>*Only XML files allowed</p>
     <br><button type="submit" value="send">UPLOAD</button>
@@ -15,7 +15,7 @@
             <div class="form">
                 <form action="File_upload/uploadImages" method="post" enctype="multipart/form-data" id="uploadForm">
     <h3><strong>Select images to upload:</strong></h3>
-    <input type="file" name="files[]" id="file" multiple="multiple" accept="image/*">
+    <input type="file" name="files[]" id="image" multiple="multiple" accept=".jpg">
         <p>*Only jpeg files allowed</p>
     <br><button type="submit" value="send">UPLOAD</button>
 </form>
